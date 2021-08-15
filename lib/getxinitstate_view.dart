@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
-class GetxState extends StatelessWidget {
-  GetxState({Key? key}) : super(key: key);
+class GetxIniState extends StatelessWidget {
+  GetxIniState({Key? key}) : super(key: key);
   var _value = 0.obs;
 
   @override
@@ -18,6 +18,8 @@ class GetxState extends StatelessWidget {
             child: Column(
               children: [
                 Obx(() => Text("$_value")),
+                Obx(() =>
+                    Text(Get.put<ControllerX>(ControllerX()).kodok.toString())),
                 SizedBox(
                   height: 10,
                 ),
@@ -40,5 +42,15 @@ class GetxState extends StatelessWidget {
         ),
       ),
     );
+  }
+}
+
+class ControllerX extends GetxController {
+  var kodok = 0.obs;
+  @override
+  void onInit() {
+    // TODO: implement onInit
+    kodok.value = 5;
+    super.onInit();
   }
 }

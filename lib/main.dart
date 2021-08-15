@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:getxaltsetstate/getxinitstate_view.dart';
 import 'package:getxaltsetstate/getxstate_view.dart';
 import 'package:getxaltsetstate/setstate_view.dart';
 
@@ -46,6 +47,14 @@ class Beranda extends StatelessWidget {
                       Get.to(() => GetxState());
                     },
                     child: Text('Getx State')),
+                SizedBox(
+                  height: 10,
+                ),
+                ElevatedButton(
+                    onPressed: () {
+                      Get.to(() => GetxIniState());
+                    },
+                    child: Text('Getx Init State')),
               ],
             ),
           ),
