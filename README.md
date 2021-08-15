@@ -1,20 +1,21 @@
 # getxaltsetstate
 
-Menerapkan setstate pada getx
+Menerapkan Set State pada getx
+# Installing
+1. tambahkan get pada file pubspec.yaml :
+> dependencies:
+  get:
 
-## Getting Started
+2. Import get pada files yang akan menggunakan library get:
 
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
-
+> import 'package:get/get.dart';
 
 # Beranda menu
 [![Getx Set State](https://i.ibb.co/981Tgvr/Getx-Set-State01.png "Getx Set State")](https://i.ibb.co/981Tgvr/Getx-Set-State01.png "Getx Set State")
+
+pada contoh di atas terdiri dari 3 button :
+1. State management menggunakan set state dan  StatefulWidget.
+2. State management menggunakan Getx dan StatelessWidget.
+3. State management fungsi initstate ( sebuah state yg akan dijalankan pada pertama kali page diload) menggunakan Getx dan StatelessWidget.
+
+&copy; Jani Suhanda &hearts;
